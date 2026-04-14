@@ -1,0 +1,28 @@
+{
+  "name": "use-theme-mode",
+  "version": "1.0.0",
+  "description": "A lightweight React hook for managing light and dark theme with persistence.",
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "react",
+    "react-hooks",
+    "theme",
+    "dark-mode",
+    "light-mode",
+    "ui",
+    "frontend"
+  ],
+  "author": "Saad Ahmad",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8"
+  }
+}
