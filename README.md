@@ -1,9 +1,28 @@
-[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://use-theme-mode-demo.vercel.app/)
+
 # use-theme-mode 🌗
+
+
+[![npm version](https://img.shields.io/npm/v/use-theme-mode.svg)](https://www.npmjs.com/package/use-theme-mode)
+[![npm downloads](https://img.shields.io/npm/dm/use-theme-mode.svg)](https://www.npmjs.com/package/use-theme-mode)
+[![license](https://img.shields.io/npm/l/use-theme-mode.svg)](LICENSE)
+[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://use-theme-mode-demo.vercel.app/)
+
 
 A lightweight, framework-agnostic React hook for managing **light and dark theme modes** with persistence and system preference detection.
 
 `use-theme-mode` focuses purely on **theme state management**, leaving styling completely in your control—making it compatible with any CSS solution or UI framework.
+
+---
+
+### ✨ Improvements
+- Added live demo deployed on Vercel
+- Added homepage link to npm package
+- Improved README with usage examples and styling guides
+---
+### 🛠 Maintenance
+- Cleaned up package metadata
+- Improved documentation structure
+
 
 ---
 
