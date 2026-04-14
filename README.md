@@ -1,8 +1,23 @@
+[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://use-theme-mode-demo.vercel.app/)
 # use-theme-mode 🌗
 
 A lightweight, framework-agnostic React hook for managing **light and dark theme modes** with persistence and system preference detection.
 
 `use-theme-mode` focuses purely on **theme state management**, leaving styling completely in your control—making it compatible with any CSS solution or UI framework.
+
+---
+
+## 🔗 Live Demo
+
+Try the live demo here:
+
+👉 https://use-theme-mode-demo.vercel.app/
+
+The demo showcases:
+- Real light/dark theme switching
+- Persistent theme state
+- Code example synced with live behavior
+
 
 ---
 

@@ -2,6 +2,7 @@
   "name": "use-theme-mode",
   "version": "1.0.0",
   "description": "A lightweight React hook for managing light and dark theme with persistence.",
+  "homepage": "https://use-theme-mode-demo.vercel.app/",
   "main": "src/index.js",
   "files": [
     "src",
