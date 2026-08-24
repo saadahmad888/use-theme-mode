@@ -1,29 +1,84 @@
 {
   "name": "use-theme-mode",
-  "version": "1.0.1",
-  "description": "A lightweight React hook for managing light and dark theme with persistence.",
-  "homepage": "https://use-theme-mode-demo.vercel.app/",
-  "main": "src/index.js",
-  "files": [
-    "src",
-    "README.md",
-    "package.json"
-  ],
-  "scripts": {
-    "test": "jest"
-  },
+  "version": "2.0.0",
+  "description": "Tiny, dependency-free React theme engine. Light, dark, system and unlimited custom themes with zero flash, SSR safety and cross-tab sync.",
   "keywords": [
     "react",
     "react-hooks",
     "theme",
     "dark-mode",
     "light-mode",
+    "color-scheme",
+    "prefers-color-scheme",
+    "next-themes",
+    "ssr",
+    "tailwind",
+    "typescript",
     "ui",
     "frontend"
   ],
-  "author": "Saad Ahmad",
+  "homepage": "https://use-theme-mode-demo.vercel.app/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saadahmad888/use-theme-mode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saadahmad888/use-theme-mode/issues"
+  },
+  "author": "Saad Ahmad (https://isaadahmad.com/)",
   "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "check:stale": "node scripts/check-stale.mjs",
+    "pretest": "node scripts/check-stale.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "playground": "npm run build && node scripts/playground.mjs",
+    "size": "npm run build && node scripts/size.mjs",
+    "prepublishOnly": "npm run check:stale && npm run typecheck && npm test && npm run build"
+  },
   "peerDependencies": {
-    "react": ">=16.8"
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.1.0",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "esbuild": "^0.24.2",
+    "jsdom": "^25.0.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
